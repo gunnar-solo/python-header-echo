@@ -13,6 +13,7 @@ class MyServer(BaseHTTPRequestHandler):
 
         self.send_response(200)
         self.send_header("Content-type", "application/json")
+        self.send_header("ALL_CAPS_RESPONSE_HEADER", "grep_me")
         self.end_headers()
         self.wfile.write(bytes(json.dumps(headers), "utf-8"))
 

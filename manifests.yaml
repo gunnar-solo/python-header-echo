@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: flask
-        image: gunnarsolo/header-echo-service:0.0.1
+        image: gunnarsolo/header-echo-service:0.0.2
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
